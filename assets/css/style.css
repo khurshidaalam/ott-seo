@@ -47,13 +47,11 @@ body .header-home .inv {
     overflow: hidden;
 }
 .skew {
-    transform: skewY(
-1.8deg);
+    transform: skewY(1.8deg);
     transform-origin: top right;
 }
 .inv {
-    transform: skewY(
--1.8deg);
+    transform: skewY(-1.8deg);
     transform-origin: top right;
 }
 .header-c__bg .inv:after, .header-c__bg .inv:before {
@@ -83,7 +81,7 @@ body .header-home .inv {
 .main-header{
     width: 100%;
     height: 80px;
-    position: relative;
+    position: fixed;
 }
 .main-nav{
     display: flex;
@@ -93,7 +91,7 @@ body .header-home .inv {
     width: 100%;
     
 }
-.main-nav:after {
+.main-nav::after {
     width: calc(100% + 250px);
     height: 1px;
     content: "";

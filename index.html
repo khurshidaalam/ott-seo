@@ -72,7 +72,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="navbar-right d-none d-md-block">
+                    <div class="navbar-right d-none d-md-flex">
                         <div class="nav-items-right">
                             <ul class="nav-item-list">
                                 <li class="nav-item"><i class="fas fa-search"></i>search</li>
@@ -403,6 +403,19 @@
             })
         })
     </script>
+    <script>
+window.onscroll = function () { scrollFunction() };
+    var navbars = document.querySelector(".main-header")
+    function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbars.style.backgroundColor = "#0d1633";
+            } else {
+                navbars.style.backgroundColor = "transparent";
+
+            }
+    }
+    </script>
+
 </body>
 
 </html>
