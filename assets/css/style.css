@@ -81,7 +81,7 @@ body .header-home .inv {
 .main-header{
     width: 100%;
     height: 80px;
-    position: fixed;
+    
 }
 .main-nav{
     display: flex;
@@ -89,7 +89,8 @@ body .header-home .inv {
     align-items: center;
     height: 80px;
     width: 100%;
-    
+    position: fixed;
+    z-index: 999;
 }
 .main-nav::after {
     width: calc(100% + 250px);
