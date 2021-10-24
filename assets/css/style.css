@@ -1105,7 +1105,7 @@ z-index: 1111;
     background: url(../img/what-is-seo-bg-img2.jpg) 50% no-repeat;
     background-size: cover;
     height: max-content;
-    padding:120px 0;
+    padding-top: 120px;
 }
 .seo-means .heading span{
     font-size: 50px;
@@ -1139,6 +1139,12 @@ z-index: 1111;
 }
 .seo-means-content{
     text-align: left !important;
+    padding-left: 2.2vw;
+}
+@media (max-width:600px) {
+    .seo-means-content{
+        padding-left: 0;
+    }
 }
 .seo-means-content .heading{
 font-size: 40px;
@@ -1156,6 +1162,10 @@ font-size: 40px;
 }
 @media (min-width:1200px) {
     .seo-means-content p {
-        max-width: 510px;
+        max-width: 600px;
     }
+}
+.seo-means .service-video-wrapper img{
+    width: 100%;
+    border-width: 15px;
 }
