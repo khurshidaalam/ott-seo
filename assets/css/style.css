@@ -25,7 +25,7 @@ ul{
     z-index: 99999999;
 }
 body .header-home .inv {
-    background: rgb(16, 31, 70) url(../img/home_hero_logo.png) 49% no-repeat !important;
+    background: rgb(16, 31, 70) url(../img/seo/background.png) 49% no-repeat !important;
     background-position-y: 10px !important;
     height: 100%;
     width: 100%;
@@ -314,6 +314,7 @@ body .header-home .inv {
 .main-nav__level-two {
     position: absolute;
     top: 0;
+    width: 600px;
     left: 100%;
     height: calc(100% - 45px);
     border-left: 1px solid #222b47;
@@ -334,7 +335,7 @@ body .header-home .inv {
     padding-bottom: 10px;
     box-sizing: content-box;
     border-bottom-right-radius: 10px;
-    z-index: 999;
+    z-index: 0;
     text-transform: capitalize;
     overflow-x: scroll;
 }
@@ -449,17 +450,44 @@ body .header-home .inv {
     margin: 0 10px;
     border-radius: 10px;
     box-shadow: 0 35px 27px 0 rgb(4 19 48 / 65%);
-    /* transform: perspective(10em) rotateX(-2deg) rotateY(-3deg) translateY(-7px) */
+    transform: perspective(10em) rotateX(0deg) rotateY(0deg) ;
 }
 .card-carousel .owl-item:nth-child(even) .cards__card{
-    transform: perspective(10em) rotateX(-1deg) rotateY(-3deg) translateY(-10px);
+    /* transform: perspective(10em) rotateX(-1deg) rotateY(-3deg) translateY(-10px); */
     background: url(../img/results-label-light.png) top no-repeat;
     background-color: rgba(84,106,187,.85);
+    animation-name:  evenanim;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+@keyframes evenanim {
+    from{
+        transform: perspective(10em) rotateX(0deg) rotateY(0deg) ;
+    }
+    to{
+        transform: perspective(10em) rotateX(-1deg) rotateY(-3deg) translateY(-10px);
+    }
 }
 .card-carousel .owl-item:nth-child(odd) .cards__card{
-    transform: perspective(10em) rotateX(1deg) rotateY(3deg) translateY(7px);
+    
     background: url(../img/results-label-dark.png) top no-repeat;
     background-color: rgba(46,64,129,.85);
+    animation-name:  oddanim;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes oddanim {
+    from{
+        transform: perspective(10em) rotateX(0deg) rotateY(0deg) ;
+    }
+    to{
+        transform: perspective(10em) rotateX(1deg) rotateY(3deg) translateY(7px);
+    }
 }
 .cards .cards__card:hover{
     transform: perspective(10em) rotateX(0deg) rotateY(0deg) scale(1.1)!important;
@@ -558,23 +586,79 @@ body .header-home .inv {
 .service-video-wrapper {
     cursor: pointer;
     position: relative;
-    max-height: 100%;
-}
-.service-video-wrapper img{
-    width: 100%;
-    box-shadow: 0 30px 160px -10px rgb(33 47 82 / 50%);
-    border: 20px solid #fff;
+    max-height: 100%;overflow: hidden;
     border-radius: 35px;
-    transition: .3s ease;
+    max-height: 100%;
+    border: 25px solid white;
 }
+
+.youtube-player {
+    position: relative;
+    padding-bottom: 56.23%;
+    /* Use 75% for 4:3 videos */
+    height: 100%;
+    width: 100%;
+  }
+  
+  .youtube-player iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+  }
+  
+  .youtube-player img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    transition: 0.4s all;
+  }
+  
+  .youtube-player img:hover {
+    -webkit-filter: brightness(75%);
+  }
+  
+  .youtube-player .play {
+    height: 100px;
+    width: 100px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.youtube-player .play i{
+    color: #101f46;
+    font-size: 36px;
+}
+
 @media (max-width:600px) {
     .service-video-wrapper {
         margin: 0 20px;
         margin-top: -60px;
+        border-width: 15px;
     }
 }
 
-.services__video-wrapper>div, .services__video-wrapper>div:before {
+/* .services__video-wrapper>div, .services__video-wrapper>div:before {
     border: 25px solid #fff;
     border-radius: 35px;
     position: absolute;
@@ -609,7 +693,7 @@ body .header-home .inv {
     top: 50%;
     left: calc(50% + 4px);
     transform: translate(-50%,-50%);
-}
+} */
 
 /* section 2  */
 .awards-section {
@@ -1283,6 +1367,16 @@ z-index: 1111;
     max-width: 570px;
     margin: 0 auto;
     font-size: 16px;
+}
+.seo-means .service-video-wrapper{
+    border-width: 15px;
+}
+.seo-means .service-video-wrapper .play{
+    width: 80px;
+    height: 80px;
+}
+.seo-means .service-video-wrapper .play i{
+    font-size: 25px;
 }
 .seo-means-content{
     text-align: left !important;
