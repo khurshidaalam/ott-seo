@@ -250,7 +250,16 @@ body .header-home .inv {
     transform: scale(0.99);
     box-shadow: none;
 }
+.location li{
+    padding: 0 20px !important;
 
+}
+.location-menu:hover .location{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.3s ease;
+    
+}
 /* sub menu  */
 
 .main-nav__level-one {
