@@ -77,8 +77,43 @@ body .header-home .inv {
     max-width: 1400px !important;
 }
 /* navs  */
-
-
+.search-area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #0d1633;
+    z-index: 99999;
+    height: 99%;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+.search-show{
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.search-content {
+    height: 79px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 100px;
+}
+.search-content i{
+    font-size: 20px;
+    color: white !important;
+    margin: 0 20px;
+}
+.search-content input{
+    background-color: transparent !important;
+    color: white !important;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
 .mobile-menu{
     display: flex;
     justify-content: space-between;
@@ -526,7 +561,7 @@ body .header-home .inv {
     font-size: 40px;
 }
 .slider-area {
-    width: 100%;
+        width: 98.5vw;
     padding-right: 0 30px;
 }
 
@@ -1181,7 +1216,7 @@ z-index: 1111;
     padding-top: 130px;
     padding-bottom: 155px;
     position: relative;
-    background: #fff url(../img/seo/fimd-us-2.png);
+    background: #fff url(../img/seo/find-us-3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -1212,7 +1247,14 @@ z-index: 1111;
 .find-us-para, .find-row-image img{
     width: 100%;
 }
-
+.find-row-image{
+    padding-right: 40px;
+}
+@media (max-width:600px) {
+    .find-row-image{
+        padding-right: 0;
+    }
+}
 .find-us-para-head span {
     color: #f2865b;
     font-weight: 700;
@@ -1403,8 +1445,8 @@ z-index: 1111;
     content: "";
     height: 700px;
     width: 300px;
-    bottom: -44px;
-    right: 5px;
+    bottom: -13px;
+    right: 57px;
     background: url(../img/seo-importance-bg-img.png) 100% 100% no-repeat;
     z-index: -1;
 }
@@ -1519,6 +1561,7 @@ z-index: 1111;
 .screenshot_slider .owl-item.center .testimonials__card {
     transform: scaleX(1.5);
 }
+
 /* .screenshot_slider .owl-nav .owl-prev,.screenshot_slider .owl-nav .owl-next{
     
     width: 56px;
@@ -1545,6 +1588,7 @@ z-index: 1111;
     position: absolute;
     height: 100%;
 }
+
 .owl-nav .owl-prev{
     position: relative;
     left: -368px;
@@ -1569,6 +1613,34 @@ z-index: 1111;
     box-shadow: 0 0 50px -5px #d1d9f2;
     right: auto;
     font-size: 16px;
+}
+@media (max-width:600px) {
+    .screenshot_slider .owl-item.center {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    .screenshot_slider .owl-item.center .testimonials__card {
+        transform: scaleX(1);
+        padding: 15px;
+    }
+    .testimonial-content {
+        transform: scaleX(1);
+    }
+    .screenshot_slider .owl-nav {
+        text-align: center;
+        display: block !important;
+        /* width: 100%; */
+        position: absolute;
+        bottom: 50px;
+        top: 85%;
+        right: 0;
+    }
+    .screenshot_slider .owl-nav .owl-prev{
+        left: 0;
+    }
+    .screenshot_slider .owl-nav .owl-next{
+        left: 0;
+    }
 }
 .testimonials__card img {
     height: 32px;
@@ -1814,7 +1886,7 @@ font-size: 40px;
 }
 
 .why-us .inv {
-    background: url(../img/seo/choose-us.png) 50% no-repeat;
+    background: url(../img/seo/choose-us-3.png) 50% no-repeat;
     padding-top: 120px;
     padding-bottom: 460px;
 }
@@ -2052,6 +2124,21 @@ h3.heading,h3.heading span{
         background-color: white;
         /* overflow: hidden; */
     }
+
+.rounded-10{
+    border-radius: 10px !important;
+}
+.insights-nav {
+    /* width: 340px; */
+    background: #14244e;
+    height: 100%;
+    position: relative;
+    text-align: left;
+    display: block !important;
+    border-radius: 10px 0 0 10px !important;
+    overflow: hidden;
+    padding-right: 7px;
+}
 @media  (max-width: 600px){
     .insights{
         flex-direction: column !important;
@@ -2067,23 +2154,9 @@ h3.heading,h3.heading span{
          padding-left: 0 !important; 
          padding: 10px !important;
     }
-.insights-nav {
-    /* overflow: hidden; */
-}
-}
-.rounded-10{
-    border-radius: 10px !important;
-}
-.insights-nav {
-    /* width: 340px; */
-    background: #14244e;
-    height: 100%;
-    position: relative;
-    text-align: left;
-    display: block !important;
-    border-radius: 10px 0 0 10px !important;
-    overflow: hidden;
-    padding-right: 7px;
+    .insights-nav {
+        height: 170px;
+    }
 }
 .nav-buttons {
     /* width: 340px; */
@@ -2161,6 +2234,7 @@ div#v-pills-tabContent {
     background: #fff;
     color: #ff8558;
     font-size: 24px;
+    font-weight: 900;
     padding-left: 80px;
     box-shadow: 0 0 60px -10px rgb(24 45 79 / 9%);
 }
