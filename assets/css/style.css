@@ -81,7 +81,7 @@ body .header-home .inv {
 
 .main-header{
     width: 100%;
-    height: 80px;
+    height: 100%;
     
 }
 .main-nav{
@@ -94,6 +94,7 @@ body .header-home .inv {
     z-index: 999;
     left: 0;
 }
+
 .main-nav::after {
     width: calc(100% + 250px);
     height: 1px;
@@ -369,6 +370,9 @@ body .header-home .inv {
 /* nav ends  */
 
 /* banner are  */
+.header-div-content {
+    padding-top: 80px
+}
 .header-middle-div{
     position: relative;
     padding-top: 16vw;
@@ -425,6 +429,7 @@ body .header-home .inv {
 }
 .heading_white{
     color: white !important;
+    position: relative;
 }
 .heading_white span{
     color: white !important;
@@ -1893,12 +1898,22 @@ h3.heading,h3.heading span{
 }
 .seo-awards .oc-carousel::before {
     content: "";
-    width: 100%;
+    width: 30%;
     height: 100%;
     background: linear-gradient(
-90deg, #e7eef7 0%, rgba(130,234,255,0) 12%, rgba(238,252,255,0) 88%, #e7eef7 100%);
+90deg, #e7eef7 , rgba(130,234,255,0));
     position: absolute;
     left: 0;
+    z-index: 1111;
+}
+.seo-awards .oc-carousel::after {
+    content: "";
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(90deg , rgba(130,234,255,0), #e7eef7);
+    position: absolute;
+    right: 0;
+    top: 0;
     z-index: 1111;
 }
 /* section 14 starts  */
