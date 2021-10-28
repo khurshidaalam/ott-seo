@@ -137,11 +137,11 @@ $(document).ready(function () {
         center: true,
         responsive: {
             0: {
-                items: 1,
+                items: 2,
                 center: true,
             },
             600: {
-                items: 2,
+                items: 3,
                 center: true,
             },
             1000: {
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function noThumb(id) {
-    var thumb = '<img src="./assets/img/meet-our-leader-video-front-img-big-compressor.jpg" alt="vdo" />',
+    var thumb = '<img src="./assets/img/seo/meet-our-leader-video-front-img-big-compressor-min.jpg" alt="vdo" />',
         play = '<div class="play"><i class="fas fa-play"></i></div>';
     return thumb.replace("ID", id) + play;
 }

@@ -9,6 +9,10 @@ body{
     overflow-x: hidden;
     background-color: #eff3fb !important;
 }
+/* 
+i{
+    font-family: "Font Awesome 5 Free";
+} */
 a{
     text-decoration: none !important;
     color: inherit !important;
@@ -32,7 +36,7 @@ body .header-home .inv {
 }
 @media (max-width:600px) {
     body .header-home .inv {
-        background: url(../img/2home-header-imgс.jpg) 50% no-repeat !important;
+        background: url(../img/seo/2home-header-imgс-min.jpg) 50% no-repeat !important;
     background-size: 100% auto !important;
     background-position: 50% 10% !important;
     background-color: #0f264f !important;
@@ -803,42 +807,6 @@ body .header-home .inv {
     }
 }
 
-/* .services__video-wrapper>div, .services__video-wrapper>div:before {
-    border: 25px solid #fff;
-    border-radius: 35px;
-    position: absolute;
-    width: 100%;
-}
-
-.services__video-wrapper>div {
-    top: 0;
-    left: 0;border: 20px solid #fff;
-    height: 99.4%;
-    z-index: -1;
-    transition: 0s .3s;
-}
-.services__c-video .play-btn {
-    background: #fff;
-    width: 98px;
-    height: 98px;
-}
-.services__video .play-btn {
-    transition: .3s ease;
-    pointer-events: none;
-}
-.play-btn:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 20px solid #fff;
-    border-top: 13px solid hsla(0,0%,100%,0);
-    border-bottom: 13px solid hsla(0,0%,100%,0);
-    top: 50%;
-    left: calc(50% + 4px);
-    transform: translate(-50%,-50%);
-} */
 
 /* section 2  */
 .awards-section {
@@ -972,7 +940,7 @@ z-index: 1111;
     transform: scale(1.5);
 }
 .recent-article{
-    background-image: url(../img/videoblockthumb-compressor.jpg);
+    background-image: url(../img/seo/videoblockthumb-compressor-min.jpg);
 }
 .recent-article .heading{
     font-size: 40px !important;
@@ -1315,7 +1283,7 @@ z-index: 1111;
 
 /* section 7 starts  */
 .our-clients{
-    background: url(../img/testimonials-bg-img2.jpg) 50% no-repeat;
+    background: url(../img/seo/testimonials-bg-img2-min.jpg) 50% no-repeat;
     background-size: cover;
     text-align: center;
     padding-top: 110px;
@@ -1578,24 +1546,6 @@ z-index: 1111;
     transform: scaleX(1.5);
 }
 
-/* .screenshot_slider .owl-nav .owl-prev,.screenshot_slider .owl-nav .owl-next{
-    
-    width: 56px;
-    height: 56px;
-    background: #d1d9f2;
-    border-radius: 50%;
-    color: #fff!important;
-    font-size: 16px;
-    outline: none;
-    cursor: pointer;
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    box-shadow: 0 0 50px -5px #d1d9f2;
-} */
 
 .testimonial-content {
     transform: scaleX(0.8);
@@ -1690,7 +1640,7 @@ margin-top: 0;
 /* section 10 starts  */
 .seo-means {
     text-align: center;
-    background: url(../img/what-is-seo-bg-img2.jpg) 50% no-repeat;
+    background: url(../img/seo/what-is-seo-bg-img2-min.jpg) 50% no-repeat;
     background-size: cover;
     height: max-content;
     padding-top: 120px;
@@ -1903,7 +1853,7 @@ font-size: 40px;
 }
 
 .why-us .inv {
-    background: url(../img/seo/choose-us-3.png) 50% no-repeat;
+    background: url(../img/seo/choose-us-3-min.png) 50% no-repeat;
     padding-top: 120px;
     padding-bottom: 460px;
 }
