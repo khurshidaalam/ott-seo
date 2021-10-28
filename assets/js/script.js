@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function noThumb(id) {
-    var thumb = '<img src="./assets/img/meet-our-leader-video-front-img-big-compressor.jpg">',
+    var thumb = '<img src="./assets/img/meet-our-leader-video-front-img-big-compressor.jpg" alt="vdo" />',
         play = '<div class="play"><i class="fas fa-play"></i></div>';
     return thumb.replace("ID", id) + play;
 }

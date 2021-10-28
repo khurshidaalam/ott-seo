@@ -1665,6 +1665,7 @@ z-index: 1111;
     height: 20px;
     width: 120px;
     margin: 20px auto;
+margin-top: 0;
 }
 .rating img{
     height: 18px !important;
