@@ -141,7 +141,7 @@ $(document).ready(function () {
                 center: true,
             },
             600: {
-                items: 1,
+                items: 2,
                 center: true,
             },
             1000: {
