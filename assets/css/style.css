@@ -2257,6 +2257,7 @@ section.logo-list-section {
     flex-wrap: wrap;
 }
 .logos__list img {
+    height: 47px;
     max-width: 100%;
 }
 
