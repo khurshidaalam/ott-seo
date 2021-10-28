@@ -1336,6 +1336,11 @@ z-index: 1111;
     display: flex;
     align-items: center;
 }
+.oc-carousel .item {
+    
+    display: flex;
+    justify-content: center;
+}
 .oc-image {
     width: max-content;
     padding: 0 10px;
