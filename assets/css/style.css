@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Lato', sans-serif !important;
     width: 100vw;
     overflow-x: hidden;
     background-color: #eff3fb !important;
 }
+
 /* 
 i{
     font-family: "Font Awesome 5 Free";
@@ -913,6 +915,8 @@ z-index: 1111;
     justify-content: center;
 }
 .feature-carousel .item img{
+    width: 185px;
+    height: 35px;
     max-width: 100%;
     max-height: 100%;
 }
@@ -1316,6 +1320,14 @@ z-index: 1111;
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+.oc-image.cl img{
+    width: 118px;
+    height: 60px;
+}
+.oc-image.awd img{
+    width: 123px;
+    height: 102px;
 }
 .owl-carousel .owl-item img {
     display: block;
@@ -2248,6 +2260,8 @@ section.logo-list-section {
 }
 .logos__list img {
     height: 47px;
+    width: 139px;
+    max-width: 100%;
 }
 .logo-list-section .container{
     max-width: 1330px !important;
