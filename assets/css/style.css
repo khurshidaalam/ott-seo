@@ -2257,14 +2257,9 @@ section.logo-list-section {
     flex-wrap: wrap;
 }
 .logos__list img {
-    height: 47px;
-    width: 139px;
     max-width: 100%;
 }
-.logos__list img img.gad-mobile{
-    width: 100% !important;
-    height: 100% !important;
-}
+
 .logo-list-section .container{
     max-width: 1330px !important;
 }
