@@ -226,5 +226,14 @@ $(function () {
 
 });
 
-const owldot = document.querySelector(".owl-dot");
-owldot.setAttribute("aria-label", "Center Align");
+document.addEventListener("DOMContentLoaded", function owl () {
+    const button = document.getElementsByTagName("button");
+    if (button.className = "owl-dot") {
+        button.setAttribute("aria-label","Center Align");
+    }
+    else{
+        console.log("none")
+    }
+    
+})
+
