@@ -1873,6 +1873,7 @@ font-size: 40px;
     margin-left: auto;
     margin-right: auto;
     width: max-content;
+    max-width: 100%;
     text-align: center !important;
 }
 .why-us .container {
