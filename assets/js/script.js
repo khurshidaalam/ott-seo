@@ -225,3 +225,6 @@ $(function () {
     });
 
 });
+
+const owldot = document.querySelector(".owl-dot");
+owldot.setAttribute("aria-label", "Center Align");
