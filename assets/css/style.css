@@ -1563,6 +1563,7 @@ z-index: 1111;
     width: 100%;
     position: absolute;
     height: 100%;
+    overflow: hidden;
 }
 
 .owl-nav .owl-prev{
