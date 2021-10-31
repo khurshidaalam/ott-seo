@@ -168,10 +168,10 @@ document.addEventListener("DOMContentLoaded", function () {
         div.onclick = noIframe;
         v[n].appendChild(div);
     }
-});
+},{passive: true});
 
 function noThumb(id) {
-    var thumb = '<img src="./assets/img/seo/meet-our-leader-video-front-img-big-compressor-min.jpg" alt="vdo" />',
+    var thumb = '<img src="./assets/img/seo/meet-our-leader-video-front-img-big-compressor-min-min.jpg" alt="vdo" />',
         play = '<div class="play"><i class="fas fa-play"></i></div>';
     return thumb.replace("ID", id) + play;
 }
@@ -196,7 +196,7 @@ $(function () {
         if (w < 700) {
             $(".service-list-item").slice(0, 2).show();
         }
-    });
+    },{passive: true});
 
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
@@ -209,7 +209,7 @@ $(function () {
         // $('html,body').animate({
         //     scrollTop: $(this).offset().top
         // }, 1500);
-    });
+    },{passive: true});
 
     $("#loadLess").on('click', function (e) {
         e.preventDefault();
@@ -222,18 +222,18 @@ $(function () {
         // $('html,body').animate({
         //     scrollTop: $(this).offset().top + desiredHeight
         // }, 1500);
-    });
+    },{passive: true});
 
 });
 
-document.addEventListener("DOMContentLoaded", function owl () {
-    const button = document.getElementsByTagName("button");
-    if (button.className = "owl-dot") {
-        button.setAttribute("aria-label","Center Align");
-    }
-    else{
-        console.log("none")
-    }
+// document.addEventListener("DOMContentLoaded", function () {
+//     const button = document.getElementsByTagName("button");
+//     if (button.className = "owl-dot") {
+//         button.setAttribute("aria-label","Center Align");
+//     }
+//     else{
+//         console.log("none")
+//     }
     
-})
+// })
 

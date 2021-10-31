@@ -24,6 +24,7 @@ ul{
     list-style: none;
 }
 
+
 /* header  */
 .header-home {
     height: calc(1306px + 7.55vw);
@@ -38,7 +39,7 @@ body .header-home .inv {
 }
 @media (max-width:800px) {
     body .header-home .inv {
-        background: url(../img/seo/2home-header-imgс-min.jpg) 50% no-repeat !important;
+        background: url(../img/seo/2home-header-imgс-min-min.jpg) 50% no-repeat !important;
     background-size: 100% auto !important;
     background-position: 50% 10% !important;
     background-color: #0f264f !important;
@@ -702,6 +703,7 @@ body .header-home .inv {
     margin-top: -7px;
     margin-right: 2px;
     height: 26px;
+    width: 26.6px;
 }
 .header-info .heading_white span{
     font-size: 40px ;
@@ -942,7 +944,7 @@ z-index: 1111;
     transform: scale(1.5);
 }
 .recent-article{
-    background-image: url(../img/seo/videoblockthumb-compressor-min.jpg);
+    background-image: url(../img/seo/videoblockthumb-compressor-min-min.jpg);
 }
 .recent-article .heading{
     font-size: 40px !important;
@@ -1220,6 +1222,7 @@ z-index: 1111;
 }
 .find-us-para, .find-row-image img{
     width: 100%;
+    height: 100%;
 }
 .find-row-image{
     padding-right: 40px;
@@ -1285,7 +1288,7 @@ z-index: 1111;
 
 /* section 7 starts  */
 .our-clients{
-    background: url(../img/seo/testimonials-bg-img2-min.jpg) 50% no-repeat;
+    background: url(../img/seo/testimonials-bg-img2-min-min.jpg) 50% no-repeat;
     background-size: cover;
     text-align: center;
     padding-top: 110px;
@@ -1651,7 +1654,7 @@ margin-top: 0;
 /* section 10 starts  */
 .seo-means {
     text-align: center;
-    background: url(../img/seo/what-is-seo-bg-img2-min.jpg) 50% no-repeat;
+    background: url(../img/seo/what-is-seo-bg-img2-min-min.jpg) 50% no-repeat;
     background-size: cover;
     height: max-content;
     padding-top: 120px;
@@ -1864,7 +1867,7 @@ font-size: 40px;
 }
 
 .why-us .inv {
-    background: url(../img/seo/choose-us-3-min.png) 50% no-repeat;
+    background: url(../img/seo/choose-us-3-min-min.png) 50% no-repeat;
     padding-top: 120px;
     padding-bottom: 460px;
 }
@@ -1896,6 +1899,7 @@ h3.heading,h3.heading span{
 }
 .why-us-content h3 img {
     width: 65px;
+    height: 65px;
     margin-right: 19px;
 }
 
@@ -1987,6 +1991,10 @@ h3.heading,h3.heading span{
 .why-us__letter img {
     position: absolute;
     top: -23px;
+    width: 209px;
+    height: 209px;
+    max-width: 209px;
+    max-height: 209px;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -2265,6 +2273,7 @@ section.logo-list-section {
 }
 .logos__list img {
     height: 47px;
+    width: 100%;
     max-width: 100%;
 }
 
