@@ -32,7 +32,7 @@ ul{
     z-index: 99999999;
 }
 body .header-home .inv {
-    background: rgb(16, 31, 70) url(../img/seo/background-3.png) 49% no-repeat !important;
+    background: rgb(16, 31, 70) url(../img/home_hero_logo.png) 49% no-repeat !important;
     background-position-y: 10px !important;
     height: 100%;
     width: 100%;
@@ -244,7 +244,7 @@ body .header-home .inv {
 }
 .navbar-logo{
     padding: 5px 8px;
-    width: 100%;
+    width: max-content;
     height: 100%;
     display: flex;
     align-items: center;
@@ -258,6 +258,7 @@ body .header-home .inv {
 .navbar-logo img {
     max-width: 100%;
     max-height: 100%;
+    width: 100%;
 }
 .navbar-left{
     display: flex;
@@ -518,7 +519,7 @@ body .header-home .inv {
     display: flex;
     width: 100%;
     height: 70px;
-    background-image: url(../img/seo/white-logo.png);
+    background-image: url(../img/logo-short-white.svg);
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -1062,7 +1063,7 @@ z-index: 1111;
     position: relative;
     margin-top: -290px !important;
     padding-top: 420px !important;
-    background: #e8edf6 url(../img/seo/our-service-2.png) 40% no-repeat;
+    background: #e8edf6 url(../img/logo-bg-services.png) 40% no-repeat;
     padding-bottom: 130px;
     background-position: center;
 }
@@ -1192,7 +1193,7 @@ z-index: 1111;
     padding-top: 130px;
     padding-bottom: 155px;
     position: relative;
-    background: #fff url(../img/seo/find-us-3.png);
+    background: #fff url(../img/how-did-you-find-us-logo-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -1867,7 +1868,7 @@ font-size: 40px;
 }
 
 .why-us .inv {
-    background: url(../img/seo/choose-us-3-min-min.png) 50% no-repeat;
+    background: url(../img/logo-bg.png) 50% no-repeat;
     padding-top: 120px;
     padding-bottom: 460px;
 }
@@ -2309,6 +2310,10 @@ section.logo-list-section {
 }
 .footer__logo {
     height:65px;
+    width: max-content;
+}
+.footer__logo img{
+    width: 100%;
 }
 
 .footer__controls {
